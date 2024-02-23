@@ -1,0 +1,157 @@
+
+html{
+    background-color: #020659;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 834px;
+    background-color:  white;
+}
+
+h1 {
+    font-size:1.25em;
+    padding-top: 2rem;
+}
+
+h2, h3 {
+    font-size: 1em;
+}
+
+
+
+h2, footer p{
+    color: #590242;
+}
+
+p, dl, dd {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: .75em;
+}
+
+nav{
+    display: flex;
+    background-color: #202873;
+    position: fixed;
+	top: 0;
+    margin: auto;
+    width: 834px;
+    align-items: center;
+    z-index: 100;
+}
+
+nav li{
+    display: inline;
+    margin: 1rem;
+    color: white;
+}
+
+.first-div{
+    background: linear-gradient(to right, #2104D9 , black);
+    color: white;
+    padding: 1rem;
+}
+
+.trending{
+    display:flex;
+}
+
+.lower{
+    display:flex;
+    margin-top: 1rem;
+}
+
+.your-playlists{
+    background-color: #0d8dfb;
+    color: white;
+    margin-top: 1rem;
+}
+
+.curated-playlists{
+    background-color: #030a8c;
+    color: white;
+}
+
+.curated-item{
+    background-color: #020659;
+    color: white;
+}
+
+section button{
+display: flex;
+margin-left: auto;
+}
+
+button{
+    background-color: #590242;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending {
+    overflow-x: scroll;
+}
+
+.curated-playlists, .your-playlists{
+    height: 620px;
+    overflow-y: scroll;
+}
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center; 
+    }
+
+    nav li:not(:first-child) {
+        display: none;
+    }
+
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: #202873;
+        color: white;
+    }
+
+    .your-playlists, .curated-playlists{
+        display:inline-flex;
+    }
+
+    .trending, .your-playlists, .curated-playlists{
+        flex-direction: row; 
+        overflow-x: scroll;
+    }
+   
+    .trending li, .your-playlists li, .curated-playlists li{
+        margin: 1rem;
+    }
+
+    section button{
+        display: flex;
+        margin-left: 1rem;
+    }
+}
